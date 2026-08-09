@@ -5,67 +5,67 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:alchemist"
+          "value": "class_kits:alchemist"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:archer"
+          "value": "class_kits:archer"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:knight"
+          "value": "class_kits:knight"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:berserker"
+          "value": "class_kits:berserker"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:assassin"
+          "value": "class_kits:assassin"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:pyromancer"
+          "value": "class_kits:pyromancer"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:cryomancer"
+          "value": "class_kits:cryomancer"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:miner"
+          "value": "class_kits:miner"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:engineer"
+          "value": "class_kits:engineer"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:druid"
+          "value": "class_kits:druid"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:sailor"
+          "value": "class_kits:sailor"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:duelist"
+          "value": "class_kits:duelist"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:demolitionist"
+          "value": "class_kits:demolitionist"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:forager"
+          "value": "class_kits:forager"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:lumberjack"
+          "value": "class_kits:lumberjack"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "shadow_kits:falconer"
+          "value": "class_kits:falconer"
         }
       ]
     }
