@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Info & Links",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Main menu for this datapack"
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": true,
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Pick a Class",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "class_kits:pick_class"
+      }
+    },
+    {
+      "label": "Report Bugs",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/shadow800000/Class-PVP-Kits/issues/new"
+      }
+    },
+    {
+      "label": "Request Feature",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/shadow800000/Class-PVP-Kits/issues/new"
+      }
+    },
+    {
+      "label": "Source Code",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/shadow800000/Class-PVP-Kits"
+      }
+    },
+    {
+      "label": "Modrinth Page",
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://modrinth.com/datapack/class-pvp-kits"
+      }
+    }
+  ]
+}

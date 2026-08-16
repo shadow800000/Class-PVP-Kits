@@ -1,0 +1,403 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "atlas": "minecraft:items",
+    "sprite": "minecraft:item/diamond_sword",
+    "extra": [
+      " Pick Class Kit ",
+      {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/bow_pulling_2"
+      }
+    ]
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Pick a target selector and a class"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "target_selector",
+      "width": 303,
+      "label": "Target Selector",
+      "options": [
+        {
+          "id": "@s",
+          "display": " You  (@s)",
+          "initial": true
+        },
+        {
+          "id": "@p",
+          "display": " Nearest Player  (@p)"
+        },
+        {
+          "id": "@r",
+          "display": " Random Player  (@r)"
+        },
+        {
+          "id": "@a",
+          "display": " All Players  (@a)"
+        },
+        {
+          "id": "@p[gamemode=creative]",
+          "display": " Nearest Creative Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=survival]",
+          "display": " Nearest Survival Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=adventure]",
+          "display": " Nearest Adventure Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=spectator]",
+          "display": " Nearest Spectator Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=!creative]",
+          "display": " Nearest Non-Creative Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=!survival]",
+          "display": " Nearest Non-Survival Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=!adventure]",
+          "display": " Nearest Non-Adventure Player  (@p)"
+        },
+        {
+          "id": "@p[gamemode=!spectator]",
+          "display": " Nearest Non-Spectator Player  (@p)"
+        },
+        {
+          "id": "@r[gamemode=creative]",
+          "display": " Random Creative Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=survival]",
+          "display": " Random Survival Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=adventure]",
+          "display": " Random Adventure Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=spectator]",
+          "display": " Random Spectator Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=!creative]",
+          "display": " Random Non-Creative Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=!survival]",
+          "display": " Random Non-Survival Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=!adventure]",
+          "display": " Random Non-Adventure Player  (@r)"
+        },
+        {
+          "id": "@r[gamemode=!spectator]",
+          "display": " Random Non-Spectator Player  (@r)"
+        },
+        {
+          "id": "@a[gamemode=creative]",
+          "display": " All Creative Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=survival]",
+          "display": " All Survival Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=adventure]",
+          "display": " All Adventure Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=spectator]",
+          "display": " All Spectator Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=!creative]",
+          "display": " All Non-Creative Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=!survival]",
+          "display": " All Non-Survival Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=!adventure]",
+          "display": " All Non-Adventure Players  (@a)"
+        },
+        {
+          "id": "@a[gamemode=!spectator]",
+          "display": " All Non-Spectator Players  (@a)"
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "exit_action": {
+    "label": "Back",
+    "width": 150,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "class_kits:menu"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": "❓ Random Class",
+      "tooltip": "Picks a random class.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:random_class_kit"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/potion",
+        "extra": [
+          " Alchemist"
+        ]
+      },
+      "tooltip": "The Alchemist specialises in all sorts of potions and LOVES gold.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:alchemist"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/bow_pulling_2",
+        "extra": [
+          " Archer"
+        ]
+      },
+      "tooltip": "The Archer is great with a bow, but not so great in melee.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:archer"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/ender_pearl",
+        "extra": [
+          " Assassin"
+        ]
+      },
+      "tooltip": "The Assassin strikes and kills, then disappears into the shadows.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:assassin"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/iron_axe",
+        "extra": [
+          " Berserker"
+        ]
+      },
+      "tooltip": "The Berserker sacrifices defence for devastating damage.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:berserker"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/snowball",
+        "extra": [
+          " Cryomancer"
+        ]
+      },
+      "tooltip": "The Cryomancer harnesses the power of ice and snow.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:cryomancer"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:blocks",
+        "sprite": "minecraft:block/tnt_side",
+        "extra": [
+          " Demolitionist"
+        ]
+      },
+      "tooltip": "The Demolitionist blows enemies sky-high.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:demolitionist"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/sweet_berries",
+        "extra": [
+          " Druid"
+        ]
+      },
+      "tooltip": "The Druid draws strength from nature.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:druid"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/iron_sword",
+        "extra": [
+          " Duelist"
+        ]
+      },
+      "tooltip": "The Duelist is an agile, close-combat fighter.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:duelist"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:blocks",
+        "sprite": "minecraft:block/cobblestone",
+        "extra": [
+          " Engineer"
+        ]
+      },
+      "tooltip": "The Engineer builds their way out of tricky situations.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:engineer"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/elytra",
+        "extra": [
+          " Falconer"
+        ]
+      },
+      "tooltip": "The Falconer rains arrows down from the sky.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:falconer"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:blocks",
+        "sprite": "minecraft:block/red_mushroom",
+        "extra": [
+          " Forager"
+        ]
+      },
+      "tooltip": "The Forager gathers food from the wilderness.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:forager"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/iron_sword",
+        "extra": [
+          " Knight"
+        ]
+      },
+      "tooltip": "The Knight is a heavily armoured warrior built for battle.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:knight"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/iron_axe",
+        "extra": [
+          " Lumberjack"
+        ]
+      },
+      "tooltip": "The Lumberjack chops trees, but their axe is also a handy weapon.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:lumberjack"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/iron_pickaxe",
+        "extra": [
+          " Miner"
+        ]
+      },
+      "tooltip": "The Miner comes straight from the mines, wielding a pickaxe and some TNT.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:miner"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/flint_and_steel",
+        "extra": [
+          " Pyromancer"
+        ]
+      },
+      "tooltip": "The Pyromancer is a fierce warrior, obsessed with fire.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:pyromancer"
+      }
+    },
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/water_bucket",
+        "extra": [
+          " Sailor"
+        ]
+      },
+      "tooltip": "The Sailor is one with the sea.",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "loot give $(target_selector) loot class_kits:sailor"
+      }
+    }
+  ]
+}
