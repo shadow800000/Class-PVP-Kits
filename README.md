@@ -1,5 +1,8 @@
 # **🗡️ Class PVP Kits 🏹** 
 
+## Main Download:
+https://modrinth.com/datapack/class-pvp-kits
+
 ## 🔎 Overview
 Class PVP Kits is a datapack that adds classes such as alchemist, knight, archer and pyromancer into PVP kits. If you like the idea of PVPing with kits based on classes then you would enjoy using this datapack. This project is a [datapack](https://minecraft.wiki/w/Data_pack), which means it requires to be in the world/server files, specifically the datapack folder. Permission Level 2 or more / OP is required to use the commands associated with this datapack.
 
