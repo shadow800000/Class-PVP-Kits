@@ -1,8 +1,8 @@
 # **🗡️ Class PVP Kits 🏹** 
 
-## Main Download:
-This project is mainly hosted on Modrinth. \
-Visit the official project page on Modrinth [here.](https://modrinth.com/datapack/class-pvp-kits)
+## [Download On Modrinth!](https://modrinth.com/datapack/class-pvp-kits)
+
+### Note: The primary, most up-to-date page for this project is on [Modrinth](https://modrinth.com/datapack/class-pvp-kits). CurseForge may receive delayed updates.
 
 
 ## 🔎 Overview
